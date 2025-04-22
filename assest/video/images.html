@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Powerful Message</title>
+</head>
+
+<body>
+
+    <!-- Title -->
+    <h1>Welcome to My Story</h1>
+
+    <!-- Picture Element for Responsive Images -->
+    <h2>About Me in an Image</h2>
+    <picture>
+        <!-- Small screen (Mobile) -->
+        <source srcset="images/mobile.jpg" media="(max-width: 600px)">
+        <!-- Medium screen (Tablet) -->
+        <source srcset="images/tablet.jpg" media="(max-width: 1024px)">
+        <!-- Large screen (Laptop/Desktop) -->
+        <source srcset="images/desktop.jpg" media="(min-width: 1025px)">
+        <!-- Default fallback image -->
+        <img src="images/default.jpg" alt="A powerful image representing my journey" width="100%">
+    </picture>
+
+    <!-- Video Element -->
+    <h2>My Journey in Motion</h2>
+    <video width="100%" controls>
+        <source src="media/video.mp4" type="video/mp4">
+        <source src="media/video.webm" type="video/webm">
+        <p>Your browser does not support the video tag. <a href="media/video.mp4">Download Video</a></p>
+    </video>
+
+    <!-- Audio Element -->
+    <h2>Listen to My Inspiration</h2>
+    <audio controls>
+        <source src="media/audio.mp3" type="audio/mp3">
+        <source src="media/audio.ogg" type="audio/ogg">
+        <p>Your browser does not support the audio element. <a href="media/audio.mp3">Download Audio</a></p>
+    </audio>
+
+    <!-- Iframe to Embed an External Page or Video -->
+    <h2>My Role Model’s Speech</h2>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="YouTube video"
+        allowfullscreen></iframe>
+
+    <!-- Back to Top Feature -->
+    <p><a href="#top">Back to Top</a></p>
+
+</body>
+
+</html>
